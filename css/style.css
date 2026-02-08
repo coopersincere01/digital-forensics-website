@@ -65,3 +65,18 @@ footer {
 #main-footer {
   margin-top: 20px;
 }
+
+/* =========================
+   Flexbox layout
+   ========================= */
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-container .content-section {
+  flex: 1;
+  min-width: 300px;
+}
