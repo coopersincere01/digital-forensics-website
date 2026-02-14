@@ -2,15 +2,31 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f6f8;
-  color: #333;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
+}
+
+/* Skip link styling */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 10px;
 }
 
 /* Header styling */
 header {
   background-color: #1f3a5f;
-  color: white;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -20,9 +36,15 @@ main {
   padding: 20px;
 }
 
-/* Section spacing */
+/* Section styling */
 section {
   margin-bottom: 30px;
+}
+
+.content-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* Headings */
@@ -41,35 +63,16 @@ p {
 footer {
   background-color: #e0e0e0;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-/* =========================
-   Class-based styling
-   ========================= */
-
-.content-section {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
+/* Focus outline for keyboard users */
+a:focus {
+  outline: 3px solid #ff9900;
+  outline-offset: 2px;
 }
 
-/* =========================
-   ID-based styling
-   ========================= */
-
-#main-header {
-  margin-bottom: 20px;
-}
-
-#main-footer {
-  margin-top: 20px;
-}
-
-/* =========================
-   Flexbox layout
-   ========================= */
-
+/* Flexbox layout */
 .flex-container {
   display: flex;
   gap: 20px;
@@ -79,4 +82,23 @@ footer {
 .flex-container .content-section {
   flex: 1;
   min-width: 300px;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .content-section {
+    padding: 15px;
+  }
 }
