@@ -25,16 +25,15 @@ body {
 
 /* Header styling */
 header {
-  background-color: #1f3a5f;
+  background: linear-gradient(90deg, #1f3a5f, #2c5282);
   color: #ffffff;
-  text-align: center;
 }
 
-/* Section card styling (works with Bootstrap grid) */
+/* Section card styling */
 .content-section {
   background-color: #ffffff;
-  padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Headings */
@@ -51,18 +50,11 @@ p {
 
 /* Footer styling */
 footer {
-  background-color: #e0e0e0;
+  background-color: #f8f9fa;
 }
 
 /* Focus outline for keyboard users */
 a:focus {
   outline: 3px solid #ff9900;
   outline-offset: 2px;
-}
-
-/* Responsive tweak for smaller screens */
-@media (max-width: 768px) {
-  .content-section {
-    padding: 15px;
-  }
 }
