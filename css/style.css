@@ -27,24 +27,14 @@ body {
 header {
   background-color: #1f3a5f;
   color: #ffffff;
-  padding: 20px;
   text-align: center;
 }
 
-/* Main content area */
-main {
-  padding: 20px;
-}
-
-/* Section styling */
-section {
-  margin-bottom: 30px;
-}
-
+/* Section card styling (works with Bootstrap grid) */
 .content-section {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Headings */
@@ -62,8 +52,6 @@ p {
 /* Footer styling */
 footer {
   background-color: #e0e0e0;
-  text-align: center;
-  padding: 15px;
 }
 
 /* Focus outline for keyboard users */
@@ -72,32 +60,8 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* Flexbox layout */
-.flex-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.flex-container .content-section {
-  flex: 1;
-  min-width: 300px;
-}
-
-/* Responsive media query */
+/* Responsive tweak for smaller screens */
 @media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-  }
-
-  body {
-    font-size: 16px;
-  }
-
-  header {
-    padding: 15px;
-  }
-
   .content-section {
     padding: 15px;
   }
